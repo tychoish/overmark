@@ -143,6 +143,8 @@ A value of 0 or negative disables overflow highlighting in this buffer."
   (when (derived-mode-p 'text-mode)
     (overmark-mode 1)))
 
+(defvar overmark-global-mode)
+
 (defun overmark--set-trailing-whitespace ()
   "Apply the global mode's trailing whitespace setting to this buffer."
   (setq-local show-trailing-whitespace overmark-global-mode))
